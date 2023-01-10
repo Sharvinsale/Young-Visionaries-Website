@@ -1,0 +1,559 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:500');
+
+.logo{
+    width: 20%;
+    margin-left: 40%;
+   margin-right: 40%;
+   margin-bottom: 2%;
+   margin-top: 3%;
+    
+}
+h4 {
+    color: #111;
+    position: absolute;
+    top: 590px;
+    left: 30%;
+    letter-spacing: 2px;
+  }
+  
+
+
+  h1 {
+    color: #111;
+    position: fixed;
+    top: 0%;
+    left: 30%;
+    letter-spacing: 2px;
+  }
+  
+  p {
+    font-size: 14px;
+    color: #fff;
+    padding: 0px 20px 20px 20px;
+    line-height: 150%;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  
+
+
+
+          /* *********************************** BUTTON FOR NAV Start HERE  ************************************/
+
+         
+          
+          /* NAVIGATION */
+          nav {
+            width: 100%;
+            margin: 0 auto;
+            background: #fff;
+            padding: 50px 0;
+           
+          }
+          nav ul {
+            list-style: none;
+            text-align: center;
+          }
+          nav ul li {
+            display: inline-block;
+          }
+          nav ul li a {
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-weight: 800;
+            font-size: 20px;
+            
+            text-transform: uppercase;
+            margin: 0 10px;
+          }
+          nav ul li a,
+          nav ul li a:after,
+          nav ul li a:before {
+            transition: all .5s;
+          }
+          
+          
+        
+          /* SHIFT */
+          nav.shift ul li a {
+            position:relative;
+            z-index: 1;
+          }
+          nav.shift ul li a:hover {
+            color: #ffffff;
+          }
+          nav.shift ul li a:after {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            margin: auto;
+            width: 100%;
+            height: 1px;
+            content: '.';
+            color: transparent;
+            background: #8e3be6;
+            visibility: none;
+            opacity: 0;
+            z-index: -1;
+          }
+          nav.shift ul li a:hover:after {
+            opacity: 1;
+            visibility: visible;
+            height: 100%;
+          }
+          
+          
+          
+          
+          
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+ /* VISONARIES  */
+
+ .box {
+  display: flex;
+/*   border:1px solid red; */
+  height: 50%;
+  align-items: center;
+  margin-top: 1%;
+  margin-bottom: 6%;
+}
+
+svg {
+  display: block;
+  font: 12em 'Montserrat';
+  
+  margin: 0 auto;
+}
+
+.text-copy {
+    fill: none;
+    stroke: white;
+    stroke-dasharray: 6% 29%;
+    stroke-width: 5px;
+    stroke-dashoffset: 0%;
+    animation: stroke-offset 5.5s infinite linear;
+}
+
+.text-copy:nth-child(1){
+	stroke: #4D163D;
+	animation-delay: -1;
+}
+
+.text-copy:nth-child(2){
+	stroke: #840037;
+	animation-delay: -2s;
+}
+
+.text-copy:nth-child(3){
+	stroke: #BD0034;
+	animation-delay: -3s;
+}
+
+.text-copy:nth-child(4){
+	stroke: #BD0034;
+	animation-delay: -4s;
+}
+
+.text-copy:nth-child(5){
+	stroke: #FDB731;
+	animation-delay: -5s;
+}
+
+@keyframes stroke-offset{
+	100% {stroke-dashoffset: -35%;}
+}
+
+/* END  */
+
+
+  
+
+
+  /* CARDS  */
+  @import url('https://fonts.googleapis.com/css?family=Raleway:200');
+body {
+  font-family: 'Raleway', sans-serif;
+}
+
+.wrapper {
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  width: 300px;
+  height: 500px;
+  perspective: 900px;
+}
+
+.container {
+  position: absolute;
+  top: 2%;
+  width: 100%;
+  height: 100%;
+  transition: .5s all ease;
+  transform: rotateX(60deg) scale(0.7);
+  perspective: 900px;
+  box-shadow: 0px 20px 50px #555;
+  animation: entry 1s linear 1;
+}
+
+#c0 {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #eba65b 30%, #d99267 100%);
+  z-index: 300;
+  box-shadow: 0px 20px 100px #555;
+}
+
+#c1 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+  left: 100%;
+  z-index: 0;
+}
+
+#c2 {
+  left: -100%;
+  z-index: 0;
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+  box-shadow: 0px 20px 100px #555;
+}
+
+.container:hover {
+  cursor: pointer;
+  transform: rotate(0deg) scale(1) translateY(10px);
+  transition: .5s all ease;
+  z-index: 400;
+}
+
+.image {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 45%;
+  background: linear-gradient(to top, #eba65b 30%, #d99267 100%);
+}
+
+#i1 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+}
+
+#i2 {
+  background: linear-gradient(to bottom, #59476f 30%, #7b88d1 100%);
+}
+
+span {
+  position: absolute;
+  top: 0%;
+  left: 55%;
+  border-radius: 100%;
+  background-color: #fff;
+  z-index: 10;
+}
+
+.sun {
+  position: absolute;
+  top: 50%;
+  height: 50%;
+  left: 0%;
+  width: 100%;
+}
+
+.sun1 {
+  width: 50px;
+  height: 50px;
+  box-shadow: 0px 0px 10px #fff;
+}
+
+.st4 {
+  fill: #f8c56f;
+  opacity: 1;
+}
+
+.st5,
+.st7 {
+  fill: #fff;
+}
+
+#sh2 {
+  opacity: 0.5;
+}
+
+#sh3 {
+  opacity: 0.3;
+}
+
+.st6 {
+    fill: #59476f;
+  }
+  
+  .st10 {
+    fill: #c5a7e5;
+    stroke: #222;
+  }
+  
+  .st11 {
+    stroke: #212121;
+    opacity: 0.5;
+  }
+  
+  #sh1 {
+    fill: #f8c56f;
+    opacity: 0.4;
+  }
+  
+  .st0 {
+    fill: #a25a62;
+    stroke: none;
+    stroke-miterlimit: 10;
+  }
+  
+  .st1 {
+    fill: none;
+    stroke: #a25a62;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+  }
+  
+  .st2 {
+    fill: #cd775c;
+  }
+  
+  .st3 {
+    fill: #fff;
+    opacity: 0.3;
+  }
+  
+  .story {
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    height: 55%;
+    width: 100%;
+    background: linear-gradient(to bottom, #eba65b 0%, #d99267 40%);
+    z-index: 30;
+  }
+  
+  #s1 {
+    background: linear-gradient(to top, #5b62a2 0%, #7b88d1 100%);
+  }
+  
+  #s2 {
+    background: linear-gradient(to top, #5b62a2 0%, #7b88d1 120%);
+  }
+  
+  .info {
+    position: absolute;
+    top: 10%;
+  }
+  
+  
+  
+  
+  
+  .page {
+    position: absolute;
+    top: 80%;
+    width: 100%;
+    left: 0%;
+    height: 20%;
+    z-index: 30;
+  }
+  
+
+  
+  /***************************************************************** DARK MODE ****************************************************************/
+
+  :root {
+    /** sunny side **/
+    --blue-background: #C2E9F6;
+    --blue-border: #72cce3;
+    --blue-color: #96dcee;
+    --yellow-background: #fffaa8;
+    --yellow-border: #f5eb71;
+    /** dark side **/
+    --indigo-background: #808fc7;
+    --indigo-border: #5d6baa;
+    --indigo-color: #6b7abb;
+    --gray-border: #e8e8ea;
+    --gray-dots: #e8e8ea;
+    /** general **/
+    --white: #fff;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+   
+    place-items: center;
+    min-height: 100vh;
+    position: relative;
+  }
+  
+  .background {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: var(--blue-background);
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    transition: all 250ms ease-in;
+  }
+  
+  .toggle--checkbox {
+    display: none;
+  }
+  .toggle--checkbox:checked {
+    /** This will all flip from sun to moon **/
+    /** Change the label color **/
+  }
+  .toggle--checkbox:checked ~ .background {
+    background: var(--indigo-background);
+  }
+  .toggle--checkbox:checked + .toggle--label {
+    background: var(--indigo-color);
+    border-color: var(--indigo-border);
+    /** Change the cloud to stars **/
+    /** Change the sun into the moon **/
+    /** Show the dimples on the moon **/
+  }
+  .toggle--checkbox:checked + .toggle--label .toggle--label-background {
+    left: 60px;
+    width: 5px;
+  }
+  .toggle--checkbox:checked + .toggle--label .toggle--label-background:before {
+    width: 5px;
+    height: 5px;
+    top: -25px;
+  }
+  .toggle--checkbox:checked + .toggle--label .toggle--label-background:after {
+    width: 5px;
+    height: 5px;
+    left: -30px;
+    top: 20px;
+  }
+  .toggle--checkbox:checked + .toggle--label:before {
+    background: var(--white);
+    border-color: var(--gray-border);
+    animation-name: switch;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+  }
+  .toggle--checkbox:checked + .toggle--label:after {
+    transition-delay: 350ms;
+    opacity: 1;
+  }
+  .toggle--label {
+    /** Placeholder element, starting at blue **/
+    width: 200px;
+    height: 100px;
+    background: var(--blue-color);
+    border-radius: 100px;
+    border: 5px solid var(--blue-border);
+    display: flex;
+    position: relative;
+    transition: all 350ms ease-in;
+    /** The sun cloud and moon stars **/
+    /** Sun/Moon element **/
+    /** Gray dots on the moon **/
+  }
+  .toggle--label-background {
+    width: 10px;
+    height: 5px;
+    border-radius: 5px;
+    position: relative;
+    background: var(--white);
+    left: 135px;
+    top: 45px;
+    transition: all 150ms ease-in;
+  }
+  .toggle--label-background:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--white);
+    left: -20px;
+    transition: all 150ms ease-in;
+  }
+  .toggle--label-background:after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    width: 40px;
+    height: 5px;
+    border-radius: 5px;
+    background: var(--white);
+    left: -10px;
+    transition: all 150ms ease-in;
+  }
+  .toggle--label:before {
+    animation-name: reverse;
+    animation-duration: 350ms;
+    animation-fill-mode: forwards;
+    transition: all 350ms ease-in;
+    content: "";
+    width: 82px;
+    height: 82px;
+    border: 5px solid var(--yellow-border);
+    top: 4px;
+    left: 4px;
+    position: absolute;
+    border-radius: 82px;
+    background: var(--yellow-background);
+  }
+  .toggle--label:after {
+    transition-delay: 0ms;
+    transition: all 250ms ease-in;
+    position: absolute;
+    content: "";
+    box-shadow: var(--gray-dots) -13px 0 0 2px, var(--gray-dots) -24px 14px 0 -2px;
+    left: 143px;
+    top: 23px;
+    width: 10px;
+    height: 10px;
+    background: transparent;
+    border-radius: 50%;
+    opacity: 0;
+  }
+  
+  @keyframes switch {
+    0% {
+      left: 4px;
+    }
+    60% {
+      left: 4px;
+      width: 112px;
+    }
+    100% {
+      left: 104px;
+      width: 82px;
+    }
+  }
+  @keyframes reverse {
+    0% {
+      left: 104px;
+      width: 82px;
+    }
+    60% {
+      left: 72px;
+      width: 112px;
+    }
+    100% {
+      left: 4px;
+    }
+  }

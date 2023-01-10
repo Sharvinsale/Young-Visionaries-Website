@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html>
+
+
+
+<body>
+
+<head>
+
+    <!DOCTYPE html>
+<html>
+    <img class= "logo" style="text-align: center;" src="YoungRichLOGO.jpg" alt="logo" />
+
+	</html>
+</head>
+</html>
+	
+
+		<!-- NAV -->
+
+		<nav class="shift">
+			<ul>
+				<li><a href="HomePage.html">HOME</a></li>
+				<li><a href="About.html">ABOUT</a></li>
+				<li><a href="Interviews.html">INTERVIEWS</a></li>
+				<li><a href="Marketing.html">MARKETING</a></li>
+				<li><a href="Community.html">COMMUNITY</a></li>
+				
+			</ul>
+		  </nav>
+ <link rel="stylesheet" href="Marketing.css">
+ 
+
+
+ <div class="form">
+	<div class="title">Welcome</div>
+	<div class="subtitle">We can help you!</div>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+
+
+
+	<form id="form" target="_self" onsubmit="return postToGoogle();" action="" autocomplete="off"> 
+		
+		
+		<div class="FirstName">
+
+			<!-- FIRST NAME -->
+			<div class="input-container ic2">
+			<input id="FirstName" class="input" type="text" name="entry.524417501"required  placeholder=" "  />
+			<div class="cut"></div>
+			<label for="FirstName" class="placeholder">Enter First Name </label>
+		  </div>
+		</div>
+		  
+		  	<!-- LAST NAME -->
+
+		  <div class="input-container ic2">
+			<input id="LastName" class="input" type="text" name="entry.1124712161" required placeholder=" "  />
+			<div class="cut"></div>
+			<label for="LastName" class="placeholder">Enter Last name</label>
+		  </div>
+
+		  <!-- COMPANY  NAME -->
+		  <div class="input-container ic2">
+			<input id="CompanyName" class="input" type="text" name="entry.154470122" required placeholder=" "  />
+			<div class="cut"></div>
+			<label for="CompanyName" class="placeholder">Company Name</label>
+		  </div>
+
+		  	<!-- EMAIL ADDRESS -->
+		  <div class="input-container ic2">
+			<input id="Email" class="input" type="text" name="entry.1006856904" required placeholder=" " />
+			<div class="cut"></div>
+			<label for="Email" class="placeholder">Enter e-mail </label>
+		  </div>
+	
+		  <!-- PHONE NUMBER -->
+		<div class="input-container ic2">
+		  <input id="Phone" class="input" type="text" name="entry.1725160326" required placeholder=" " />
+		  <div class="cut"></div>
+		  <label for="Phone" class="placeholder">Enter Phone #</label>
+		</div>
+
+		<!-- WEBSITE -->
+		<div class="input-container ic2">
+			<input id="Website" class="input" type="text" name="entry.1832535515" required placeholder=" " />
+			<div class="cut cut-long"></div>
+			<label for="Website" class="placeholder">Enter Website</label>
+		  </div>
+
+
+		<!-- InstagramHandle -->
+		<div class="input-container ic2">
+			<input id="InstagramHandle" class="input" type="text" name="entry.130822260" required placeholder=" " />
+			<div class="cut cut-long"></div>
+			<label for="InstagramHandle" class="placeholder">Instagram Handle</label>
+		  </div>
+
+		  <!-- TikTOkHandle -->
+		  <div class="input-container ic2">
+			<input id="TikTOkHandle" class="input" type="text" name="entry.1726775844" required placeholder=" " />
+			<div class="cut cut-long"></div>
+			<label for="TikTOkHandle" class="placeholder">TikTok Handle </label>
+		  </div>
+
+
+		  <!-- Wherefindat -->
+		  <div class="input-container ic2">
+			<input id="Wherefindat" class="input" type="text" name="entry.181895158" required placeholder=" " />
+			<div class="cut cut-long"></div>
+			<label for="Wherefindat" class="placeholder">How did you find us? </label>
+		  </div>
+
+
+		 
+<!--  Services-->
+<div class="input-container ic2">
+	<input id="Services" class="input" type="text" name="entry.1381559597" required  placeholder=" " />
+	<div class="cut cut-long"></div>
+	<label for="Services" class="placeholder">Which services interest you? </label>
+  </div>
+		 
+<!-- OPTION-->
+  <div class="option">
+	<div class="subtitle">Is this one time and/or ongoing?</div>
+	<div class="cut cut-long"></div>
+  <select id="option" name="entry.704419841"  required>
+	
+  
+	<option value="One Time">One Time</option>
+	<option value="Ongoing">Ongoing</option>
+	
+	</select> 
+</div>
+
+
+	<div class="calender">
+
+		<div class="subtitle">Pick A Date Youre Available for a call?</div>
+		<input type="datetime-local" id="calender" name="calender" name="entry.1944797533" required >
+		 
+	</div>
+
+
+
+	<div class="marketingbudget">
+		<div class="subtitle">What is your marketing budget?</div>
+	
+	  <select id="marketingbudget" name="entry.1407278423"  required>
+	  
+		<option value="10-20K">10-20K</option>
+		<option value="20-50k">20-50k</option>
+		<option value="50-100k">50-100k</option>
+		<option value="100k+">100k+</option>
+		
+		</select>  
+	</div>
+	
+	
+		<button type="text" class="submit">submit</button>
+	
+		<button id="send" type="submit" class="common_btn">Register Now</button>
+		</form>
+		
+		<h3 id="success-msg" style="text-align: center !important; margin-top:190px !important; display:none; color:#fff"> Your Request has been posted to Google Spreadsheet</h3>
+
+
+
+		
+
+
+
+		<script>
+			function postToGoogle() {
+							var FirstName = $("#FirstName").val();
+							var LastName = $("#LastName").val();
+							var CompanyName = $("#CompanyName").val();
+							var Email = $("#Email").val();
+							var Phone = $("#Phone").val();
+							var Website = $("#Website").val();
+							var InstagramHandle = $("#InstagramHandle").val();
+							var TikTOkHandle = $("#TikTOkHandle").val();
+							var Wherefindat = $("#Wherefindat").val();
+							var Services = $("#Services").val();
+							var OneTime = $("#OneTime:selected").text();
+							var option = $("#option").val();
+							var calender = $("#calender:selected").val();
+							var marketingbudget= $("#marketingbudget:selected").text();
+
+
+							
+							 
+							if(FirstName == ""){
+								alert('Please Fill Your FirstName');
+								document.getElementById("FirstName").focus();
+								return false;
+							}
+
+							if(LastName == ""){
+								alert('LastName');
+								document.getElementById("LastName").focus();
+								return false;
+							}
+							if(CompanyName == ""){
+								alert('Company Name');
+								document.getElementById("CompanyName").focus();
+								return false;
+							}
+							if(Email == ""){
+								alert('Email');
+								document.getElementById("Email").focus();
+								return false;
+							}
+
+							if(Phone == "" || Phone.length > 10 || Phone.length < 10){
+								alert('Mobile Number');
+								document.getElementById("mobField").focus();
+								return false;
+							}
+							
+							if(Website == ""){
+								alert('Website');
+								document.getElementById("Website").focus();
+								return false;
+							}
+							
+							if(InstagramHandle == ""){
+								alert(' Instagram Handle');
+								document.getElementById("InstagramHandle").focus();
+								return false;
+							}
+
+							if(TikTOkHandle == ""){
+								alert('TikTOkHandle Handle');
+								document.getElementById("TikTOkHandle").focus();
+								return false;
+							}
+
+							if(Wherefindat == ""){
+								alert('Wherefindat Handle');
+								document.getElementById("Wherefindat").focus();
+								return false;
+							}
+							if(Services == ""){
+								alert('Services');
+								document.getElementById("Services").focus();
+								return false;
+							}
+
+							if(OneTime == ""){
+								alert('OneTime');
+								document.getElementById("OneTime").focus();
+								return false;
+							}
+
+
+
+							if(option == ""){
+								alert('option');
+								document.getElementById("option").focus();
+								return false;
+							}
+
+
+							if(marketingbudget == ""){
+								alert('marketingbudget');
+								document.getElementById("marketingbudget").focus();
+								return false;
+							}
+			
+			
+							
+							
+				
+							$.ajax({
+								url: "https://docs.google.com/forms/d/e/1FAIpQLSebrEDZniMnq9z0dmxDcj3s6vLGiKHV0pA-3Vrr7TgU0SmZjQ/formResponse?",
+								data: {"entry.524417501":  FirstName, "entry.1124712161": LastName, "entry.154470122": CompanyName, "entry.1006856904":Email, "entry.1725160326": Phone,"entry.1832535515" : Website, "entry.130822260" : InstagramHandle,"entry.1726775844": TikTOkHandle,"entry.181895158": Wherefindat,"entry.1381559597": Services,"entry.704419841": OneTime,"entry.1944797533": option,"entry.1407278423": marketingbudget}, 
+								type: "POST",
+								dataType: "xml",
+								success: function(d)
+								{
+								},
+								error: function(x, y, z)
+									{
+			
+										$('#success-msg').show();
+										$('#form').hide();
+										
+									}
+							});
+							return false;
+						}
+			</script>
+
+
+	
+
+
+	
+
+	
+  </div>
